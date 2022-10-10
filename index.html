@@ -18,37 +18,36 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <a href="./index.html" lang="en" class="logo">
-          <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
-        >
+    <header class="header">
         <nav class="nav">
           <ul class="nav-flex">
-            <li><a class="nav-link current" href="./index.html">Студія</a></li>
-            <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="nav-link" href="">Контакти</a></li>
+            <li class="item"><a href="./index.html" lang="en" class="logo">
+          <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a></li>
+            <li class="item"><a class="nav-link current" href="./index.html">Студія</a></li>
+            <li class="item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a class="nav-link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="mail">
           <div class="mail-flex">
-            <li>
+            <li class="itemtel">
               <a class="nav-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
 
-            <li><a class="nav-link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="itemtel"><a class="nav-link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </div>
         </ul>
-      </header>
-    </div>
-
+      
+  
+    </header>
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button-hero">Замовити послугу</button>
       </section>
-      <div class="container">
-        <section class="container-section">
+      
+        <section class="container">
+          
           <ul class="flex-sections">
             <li>
               <h2 class="section-title">УВАГА ДО ДЕТАЛЕЙ</h2>
@@ -75,10 +74,12 @@
               </p>
             </li>
           </ul>
+          
         </section>
-      </div>
-      <div class="container">
-        <section class="caption">
+      
+      
+        <section class="container">
+      
           <h2 class="caption-title">Чим ми займаємося</h2>
           <ul class="flex-caption">
             <li>
@@ -94,9 +95,10 @@
             </li>
           </ul>
         </section>
-      </div>
-      <div class="container">
+      
+      
         <section class="team">
+          <div class="container">
           <h2 class="caption-title">Наша команда</h2>
           <ul class="team-box">
             <li class="team-box-img">
@@ -120,12 +122,14 @@
               <p class="team-text" lang="en">UI Designer</p>
             </li>
           </ul>
+          </div>
         </section>
-      </div>
+      
     </main>
     <footer class="footer-container">
-      <div class="container">
+      
         <address>
+          <div class="container">
           <ul class="ul-footer">
             <li>
               <a lang="en" class="logo" href="./index.html"
@@ -134,7 +138,7 @@
             </li>
           </ul>
           <ul class="map">
-            <li>
+            <li class="ftr">
               <a
                   href="https://goo.gl/maps/5NG6xnhZqoV4ewts6"
                   class="address"
@@ -143,11 +147,11 @@
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
             </li>
-                <li>
+                <li class="ftr mail">
               <a class="nav-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
 
-            <li><a class="nav-link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="ftr tel"><a class="nav-link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
               </ul>
             </div>
     
