@@ -22,7 +22,6 @@ body {
   align-items: center;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
 }
 
 .container {
@@ -32,31 +31,43 @@ body {
   padding: 0 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-element:nth-child(1) {
+  padding-right: 93px;
+}
+
+.header-element:nth-child(n + 2) {
+  padding-right: 50px;
+}
+
+.header-element:nth-child(4) {
+  padding-right: 344px;
+}
+
+.header-element:nth-child(6) {
+  padding-right: 0;
+}
+
 .nav-flex {
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.nav-flex .item:first-child {
-  margin-left: 215px;
-  margin-right: 93px;
-}
-
-.nav-flex .item:nth-child(n + 2) {
-  margin-right: 50px;
-}
-
-.nav-flex .item:last-child {
-  margin-right: 0;
-}
-
-.mail-flex {
-  display: flex;
-  gap: 50px;
-  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
@@ -66,11 +77,12 @@ body {
   line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.03em;
+  padding: 24px 0;
 }
 
 .logo-web {
-  color: var(--color-accent);
   font-family: 'Raleway', sans-serif;
+  color: var(--color-accent);
 }
 
 .logo-studio {
@@ -79,8 +91,8 @@ body {
 }
 
 .logo-studio-second {
-  color: #ffffff;
   font-family: 'Raleway', sans-serif;
+  color: #ffffff;
 }
 
 .nav {
@@ -99,6 +111,7 @@ body {
   color: var(--color-title);
   text-decoration: none;
   padding: 32px 0;
+  display: block;
 }
 
 .nav-link:hover,
@@ -119,21 +132,21 @@ body {
   margin-bottom: 0;
 }
 
-.mail-flex .itemtel:last-child {
-  margin-right: 215px;
-}
-
 li {
   list-style-type: none;
 }
 
 .nav-link.tel {
   color: var(--color-text);
-  padding: 0;
+  padding: 32px 0;
+  display: block;
+  margin: 0;
 }
 
 .nav-link.mail {
   padding: 0;
+  display: block;
+  padding: 32px 0;
 }
 
 .map a {
@@ -160,13 +173,12 @@ li {
 
 .hero {
   background: var(--color-background);
-  padding: 200px 0 0 0;
+  padding: 200px 0;
   text-align: center;
 }
 
 .hero-title {
   color: var(--color-white);
-  font-weight: 900;
   font-size: 44px;
   line-height: 1.35;
   text-align: center;
@@ -189,7 +201,6 @@ li {
   color: var(--color-white);
   width: 216px;
   height: 50px;
-  margin: 0 auto 200px auto;
   border: none;
 }
 
@@ -201,7 +212,6 @@ li {
 
 .flex-sections {
   display: flex;
-  gap: 30px;
   justify-content: center;
   margin: 0;
   padding-left: 0;
@@ -214,8 +224,8 @@ li {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 94px;
-  margin-bottom: 10px;
+  padding-top: 94px;
+  margin: 0;
 }
 
 .section-text {
@@ -224,9 +234,13 @@ li {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  width: 270px;
-  margin-bottom: 94px;
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+.last {
+  padding-right: 0;
 }
 
 .caption-title {
@@ -236,24 +250,28 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 0;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .flex-caption {
   display: flex;
-  gap: 30px;
   justify-content: center;
-  margin-bottom: 94px;
   padding-left: 0;
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 94px;
+}
+
+.caption-element:nth-child(-n + 2) {
+  padding-right: 30px;
 }
 
 .team {
   background: var(--color-background-third);
-  padding-top: 94px;
   left: 0px;
   top: 1446px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -263,7 +281,9 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 30px auto 10px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-text {
@@ -273,13 +293,12 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 30px;
-  margin-top: 0px;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .team-box {
   display: flex;
-  gap: 30px;
   justify-content: center;
   padding-left: 0;
   margin: 0;
@@ -292,10 +311,12 @@ li {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-element:nth-child(-n + 3) {
+  padding-right: 30px;
+}
+
 .footer-container {
   background: var(--color-background);
-  margin-top: 94px;
-  height: 252px;
 }
 
 .ul-footer {
@@ -304,22 +325,25 @@ li {
   padding-top: 60px;
 }
 
-.ftr {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.footer-element {
+  padding-top: 20px;
 }
 
-.mail {
-  margin: 0;
+.text-decor {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
 }
 
-.tel {
-  margin-top: 10px;
-  margin-bottom: 0;
+.text-decor:hover,
+.text-decor:focus {
+  color: var(--color-accent);
 }
 
-.mail {
-  display: inline-block;
+.cont {
+  padding-top: 10px;
+}
+.cont:nth-child(3) {
+  padding-bottom: 60px;
 }
 
 .nav-liks {
@@ -336,6 +360,11 @@ li {
   font-style: normal;
 }
 
+.address:hover,
+.address:focus {
+  color: var(--color-accent);
+}
+
 .button-link {
   background: var(--color-background-third);
   border-radius: 4px;
@@ -344,13 +373,15 @@ li {
   font-size: 16px;
   line-height: 1.35;
   letter-spacing: 0.03em;
-
-  width: 125px;
-  height: 38px;
-  left: 593px;
-  top: 174px;
-  margin-bottom: 34px;
   border: none;
+}
+
+.button-link:nth-child(1) {
+  padding: 6px 22px;
+}
+
+.button-link:nth-child(-n + 3) {
+  margin-left: 8px;
 }
 
 .button-link:hover,
@@ -371,17 +402,16 @@ li {
   box-sizing: border-box;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .boxes {
   display: flex;
-  flex-basis: calc(100% / 3);
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
+  gap: 27px;
+  padding-left: 0;
   margin: 0;
+  padding-bottom: 94px;
 }
 
 .boxes-title {
@@ -404,52 +434,17 @@ li {
   letter-spacing: 0.03em;
   padding-left: 24px;
   padding-top: 4px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .ul-button {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  padding: 0;
-}
-
-.one {
-  padding: 6px 25px;
-  width: 73px;
-  height: 38px;
-  margin-bottom: 0;
-}
-
-.two {
-  width: 125px;
-  height: 38px;
-  padding: 6px 22px;
-  margin-bottom: 0;
-}
-
-.three {
-  width: 112px;
-  height: 38px;
-  padding: 6px 22px;
-  margin-bottom: 0;
-}
-
-.four {
-  width: 103px;
-  height: 38px;
-  padding: 6px 22px;
-  margin-bottom: 0;
-}
-
-.five {
-  width: 130px;
-  height: 38px;
-  padding: 6px 22px;
-  margin-bottom: 0;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .footer-container-port {
