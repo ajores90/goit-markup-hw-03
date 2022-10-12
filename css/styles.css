@@ -50,19 +50,19 @@ body {
 }
 
 .header-element:nth-child(1) {
-  padding-right: 93px;
+  margin-right: 93px;
 }
 
 .header-element:nth-child(n + 2) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .header-element:nth-child(4) {
-  padding-right: 344px;
+  margin-right: 344px;
 }
 
 .header-element:nth-child(6) {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .nav-flex {
@@ -77,11 +77,12 @@ body {
   line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.03em;
-  padding: 24px 0;
+  padding: 25px 0;
 }
 
 .logo-web {
   font-family: 'Raleway', sans-serif;
+  font-style: normal;
   color: var(--color-accent);
 }
 
@@ -93,6 +94,7 @@ body {
 .logo-studio-second {
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
+  font-style: normal;
 }
 
 .nav {
@@ -202,6 +204,7 @@ li {
   width: 216px;
   height: 50px;
   border: none;
+  border-radius: 4px;
 }
 
 .button-hero:hover {
@@ -224,7 +227,6 @@ li {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 94px;
   margin: 0;
 }
 
@@ -235,8 +237,8 @@ li {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin: 0;
-  padding-top: 10px;
-  padding-right: 30px;
+  margin-top: 10px;
+  margin-right: 30px;
 }
 
 .last {
@@ -251,8 +253,7 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .flex-caption {
@@ -260,15 +261,13 @@ li {
   justify-content: center;
   padding-left: 0;
   margin: 0;
-  padding-bottom: 94px;
 }
 
 .caption-element:nth-child(-n + 2) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .team {
-  background: var(--color-background-third);
   left: 0px;
   top: 1446px;
   padding-bottom: 94px;
@@ -282,8 +281,7 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -294,7 +292,10 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
-  padding-bottom: 30px;
+}
+
+.specialists {
+  padding: 30px;
 }
 
 .team-box {
@@ -312,7 +313,7 @@ li {
 }
 
 .team-element:nth-child(-n + 3) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .footer-container {
@@ -326,11 +327,12 @@ li {
 }
 
 .footer-element {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .text-decor {
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   color: var(--color-text);
 }
 
@@ -340,8 +342,9 @@ li {
 }
 
 .cont {
-  padding-top: 10px;
+  margin-top: 10px;
 }
+
 .cont:nth-child(3) {
   padding-bottom: 60px;
 }
@@ -401,17 +404,55 @@ li {
 .boxes-img {
   box-sizing: border-box;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   margin: 0;
 }
 
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 27px;
   padding-left: 0;
+  justify-content: center;
   margin: 0;
-  padding-bottom: 94px;
+}
+
+.boxes-element:nth-child(-n + 3) {
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+.boxes-element:nth-child(3) {
+  margin-right: 0;
+}
+
+.boxes-element:nth-child(4) {
+  margin-left: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.boxes-element:nth-child(5) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.boxes-element:nth-child(6) {
+  margin-bottom: 30px;
+}
+
+.boxes-element:nth-last-child(-n + 3) {
+  margin-left: 30px;
+}
+
+.boxes-element:nth-child(7) {
+  margin-left: 0;
+}
+
+.produkts {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .boxes-title {
@@ -420,10 +461,8 @@ li {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-left: 24px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 4px;
 }
 
 .boxes-text {
@@ -432,10 +471,7 @@ li {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  padding-left: 24px;
-  padding-top: 4px;
   margin: 0;
-  padding-bottom: 20px;
 }
 
 .ul-button {
@@ -443,7 +479,6 @@ li {
   justify-content: center;
   margin: 0;
   padding-left: 0;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -455,4 +490,21 @@ li {
   height: 252px;
   left: 0px;
   top: 2094px;
+}
+
+.about {
+  padding-top: 94px;
+}
+
+.service {
+  padding: 94px 0;
+}
+
+.squad {
+  background: var(--color-background-third);
+  padding-top: 94px;
+}
+
+.portfolio {
+  padding: 94px 0;
 }
