@@ -44,6 +44,11 @@ body {
   margin: -1px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .header-flex {
   display: flex;
   align-items: center;
@@ -78,6 +83,15 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   padding: 25px 0;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .logo-web {
@@ -175,7 +189,7 @@ li {
 
 .hero {
   background: var(--color-background);
-  padding: 200px 0;
+  padding: 106px 0;
   text-align: center;
 }
 
@@ -270,7 +284,6 @@ li {
 .team {
   left: 0px;
   top: 1446px;
-  padding-bottom: 94px;
 }
 
 .team-title {
@@ -316,18 +329,15 @@ li {
   margin-right: 30px;
 }
 
-.footer-container {
+.footer {
   background: var(--color-background);
+  padding: 60px 0;
 }
 
-.ul-footer {
+.footer-link {
   margin: 0;
   padding-left: 0;
-  padding-top: 60px;
-}
-
-.footer-element {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .text-decor {
@@ -343,10 +353,6 @@ li {
 
 .cont {
   margin-top: 10px;
-}
-
-.cont:nth-child(3) {
-  padding-bottom: 60px;
 }
 
 .nav-liks {
@@ -410,42 +416,17 @@ li {
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
   justify-content: center;
-  margin: 0;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-.boxes-element:nth-child(-n + 3) {
-  margin-top: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-left: 0;
-}
-
-.boxes-element:nth-child(3) {
-  margin-right: 0;
-}
-
-.boxes-element:nth-child(4) {
-  margin-left: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.boxes-element:nth-child(5) {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.boxes-element:nth-child(6) {
-  margin-bottom: 30px;
-}
-
-.boxes-element:nth-last-child(-n + 3) {
+.boxes-element {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-}
-
-.boxes-element:nth-child(7) {
-  margin-left: 0;
+  margin-top: 30px;
 }
 
 .produkts {
@@ -479,32 +460,17 @@ li {
   justify-content: center;
   margin: 0;
   padding-left: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.footer-container-port {
-  background: var(--color-background);
-  margin-top: 94px;
-
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2094px;
-}
-
-.about {
-  padding-top: 94px;
+.section {
+  padding: 94px 0;
 }
 
 .service {
-  padding: 94px 0;
+  padding-top: 0;
 }
 
 .squad {
   background: var(--color-background-third);
-  padding-top: 94px;
-}
-
-.portfolio {
-  padding: 94px 0;
 }
